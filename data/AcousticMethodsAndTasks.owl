@@ -1,0 +1,1996 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/alinachusova/ontologies/2023/2/AcousticsMethodsAndLang#"
+     xml:base="http://www.semanticweb.org/alinachusova/ontologies/2023/2/AcousticsMethodsAndLang"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:AcousticsMethods="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/alinachusova/ontologies/2023/2/AcousticsMethodsAndLang"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Plain_of -->
+
+    <owl:AnnotationProperty rdf:about="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Plain_of"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Building_characterized_by -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Building_characterized_by">
+        <rdfs:range rdf:resource="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Building"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Formula_argument -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Formula_argument">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Formula_form"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Language_term"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Language_term"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Formula_form -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Formula_form">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Language_term"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Language_term"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Formula_return_type -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Formula_return_type">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Formula_form"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Language_term"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Language_term"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Has_amplitude_frequency -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Has_amplitude_frequency">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Source"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Amplitude_frequency"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Has_argument -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Has_argument">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Is_argument"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Has_frequency -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Has_frequency">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Amplitude_frequency"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Frequency_direction"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Frequency_type"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Has_frequency_direction -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Has_frequency_direction">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Source"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Frequency_direction"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Has_many -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Has_many"/>
+    
+
+
+    <!-- http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Has_method -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Has_method">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Is_method_of"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Theory"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Method"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Has_plain -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Has_plain">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Plains_of"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Building"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Plain"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Has_term -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Has_term">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Is_term_of"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Acoustics_terms"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Language_term"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Has_term_method -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Has_term_method">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Is_term_method"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Language_term"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Terms_methods"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Has_theory -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Has_theory">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Is_theory"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Building"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Theory"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Is_argument -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Is_argument"/>
+    
+
+
+    <!-- http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Is_builiding_characteristics -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Is_builiding_characteristics">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Building"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Plain"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Is_method_of -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Is_method_of">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Method"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Theory"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Is_simulated_by -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Is_simulated_by">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Building"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Method"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Is_term_method -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Is_term_method"/>
+    
+
+
+    <!-- http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Is_term_of -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Is_term_of">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Language_term"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Acoustics_terms"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Is_theory -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Is_theory">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Theory"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Building"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Material_characterized_by -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Material_characterized_by">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Material"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Numeric_argument_type -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Numeric_argument_type">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Numerical_type"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Language_term"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Language_term"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Numeric_return_type -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Numeric_return_type">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Numerical_type"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Language_term"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Language_term"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Numerical_type -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Numerical_type">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Language_term"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Language_term"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Plain_characterized_by -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Plain_characterized_by">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Plain"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Plains_of -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Plains_of">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Plain"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Building"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Source_characterized_by -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Source_characterized_by">
+        <rdfs:range rdf:resource="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Source"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#String_argument_type -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#String_argument_type">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#String_type"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Language_term"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Language_term"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#String_return_type -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#String_return_type">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#String_type"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Language_term"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Language_term"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#String_type -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#String_type">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Language_term"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Language_term"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/alinachusova/ontologies/2023/2/AcousticsMethodsAndLang#Solving_for -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/alinachusova/ontologies/2023/2/AcousticsMethodsAndLang#Solving_for">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/alinachusova/ontologies/2023/2/AcousticsMethodsAndLang#Tasks"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Building"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/alinachusova/ontologies/2023/2/AcousticsMethodsAndLang#Solving_result -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/alinachusova/ontologies/2023/2/AcousticsMethodsAndLang#Solving_result">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/alinachusova/ontologies/2023/2/AcousticsMethodsAndLang#Tasks"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Acoustics_terms"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/alinachusova/ontologies/2023/2/AcousticsMethodsAndLang#Using_for_solving_term -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/alinachusova/ontologies/2023/2/AcousticsMethodsAndLang#Using_for_solving_term">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/alinachusova/ontologies/2023/2/AcousticsMethodsAndLang#Tasks"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Acoustics_terms"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Absorbation_coefficient -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Absorbation_coefficient">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:range>
+            <rdfs:Datatype>
+                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+                <owl:withRestrictions rdf:parseType="Collection">
+                    <rdf:Description>
+                        <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0</xsd:minInclusive>
+                    </rdf:Description>
+                    <rdf:Description>
+                        <xsd:maxInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.0</xsd:maxInclusive>
+                    </rdf:Description>
+                </owl:withRestrictions>
+            </rdfs:Datatype>
+        </rdfs:range>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Consider_separate_reflections -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Consider_separate_reflections">
+        <owl:equivalentProperty rdf:resource="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Is_in_near_area"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Building"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Curvature -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Curvature">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Direction -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Direction">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Frequency -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Frequency">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Frequency_type"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Is_closed_building -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Is_closed_building">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Building"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Is_complex_building -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Is_complex_building">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Building"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Is_in_near_area -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Is_in_near_area">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Length_plain -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Length_plain">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Need_accuracy -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Need_accuracy">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Method"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Need_fast_simulation -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Need_fast_simulation">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Method"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Need_refraction_structure -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Need_refraction_structure">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Method"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Need_wave_effects -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Need_wave_effects">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Method"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Purpose -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Purpose">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Building"/>
+        <rdfs:range>
+            <rdfs:Datatype>
+                <owl:oneOf>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                        <rdf:first>Lecture</rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                <rdf:first>Living</rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                        <rdf:first>Meeting</rdf:first>
+                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </owl:oneOf>
+            </rdfs:Datatype>
+        </rdfs:range>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Term_name -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Term_name">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Language_term"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Texture -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Texture">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Volume -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Volume">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Building"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Wave_length -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Wave_length">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Source"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#X_coordinate -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#X_coordinate">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Y_coordinate -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Y_coordinate">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Acoustics_terms -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Acoustics_terms"/>
+    
+
+
+    <!-- http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Amplitude_frequency -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Amplitude_frequency">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Acoustics_terms"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Beam_tracing"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Building"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Geometric"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Image_sources"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Radiance_transfer"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Radiance_transfer_group"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Radiosity"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Ray_tracing"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Statistic"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Amplitude_frequency_formulae -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Amplitude_frequency_formulae">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Amplitude_frequency"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Frequency_direction"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Has_frequency"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Frequency_type"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Beam_tracing"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Building"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Geometric"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Image_sources"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Radiance_transfer"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Radiance_transfer_group"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Radiosity"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Ray_tracing"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Statistic"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Amplitude_frequency_table -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Amplitude_frequency_table">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Amplitude_frequency"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Beam_tracing"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Building"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Geometric"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Image_sources"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Radiance_transfer"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Radiance_transfer_group"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Radiosity"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Ray_tracing"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Statistic"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Beam_tracing -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Beam_tracing">
+        <owl:equivalentClass rdf:resource="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Ray_tracing"/>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Curvature"/>
+                        <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0</owl:hasValue>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Is_complex_building"/>
+                        <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</owl:hasValue>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Building"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Tracing_group"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Frequency_direction"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Frequency_direction_formulae"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Frequency_direction_table"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Boundary_elements -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Boundary_elements">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Element_based"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Finite_elements"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Building -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Building">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Has_theory"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Theory"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Acoustics_terms"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Frequency_direction"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Frequency_direction_formulae"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Frequency_direction_table"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Cone_tracing -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Cone_tracing">
+        <owl:equivalentClass rdf:resource="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Particle_tracing"/>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Curvature"/>
+                                <owl:someValuesFrom>
+                                    <rdfs:Datatype>
+                                        <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+                                        <owl:withRestrictions rdf:parseType="Collection">
+                                            <rdf:Description>
+                                                <xsd:minExclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0</xsd:minExclusive>
+                                            </rdf:Description>
+                                            <rdf:Description>
+                                                <xsd:maxInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#double">180.0</xsd:maxInclusive>
+                                            </rdf:Description>
+                                        </owl:withRestrictions>
+                                    </rdfs:Datatype>
+                                </owl:someValuesFrom>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Is_complex_building"/>
+                                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:hasValue>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Curvature"/>
+                        <owl:someValuesFrom>
+                            <rdfs:Datatype>
+                                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+                                <owl:withRestrictions rdf:parseType="Collection">
+                                    <rdf:Description>
+                                        <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#double">-180.0</xsd:minInclusive>
+                                    </rdf:Description>
+                                    <rdf:Description>
+                                        <xsd:maxExclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0</xsd:maxExclusive>
+                                    </rdf:Description>
+                                </owl:withRestrictions>
+                            </rdfs:Datatype>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:unionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Tracing_group"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Digital_waveguide -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Digital_waveguide">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Method"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Is_method_of"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Wave"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Element_based -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Element_based">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Method"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Is_method_of"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Wave"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Emit_method -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Emit_method">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Terms_methods"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Finite_differences -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Finite_differences">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Method"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Is_method_of"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Wave"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Finite_elements -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Finite_elements">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Element_based"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Frequency_direction -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Frequency_direction">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Acoustics_terms"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Geometric"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Image_sources"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Radiance_transfer"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Radiance_transfer_group"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Radiosity"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Ray_tracing"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Statistic"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Frequency_direction_formulae -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Frequency_direction_formulae">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Amplitude_frequency"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Frequency_direction"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Has_frequency"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Frequency_type"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Geometric"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Image_sources"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Radiance_transfer"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Radiance_transfer_group"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Radiosity"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Ray_tracing"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Statistic"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Frequency_direction_table -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Frequency_direction_table">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Frequency_direction"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Geometric"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Image_sources"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Radiance_transfer"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Radiance_transfer_group"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Radiosity"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Ray_tracing"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Statistic"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Frequency_type -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Frequency_type">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#High_frequency"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Low_frequency"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Middle_frequency"/>
+                </owl:unionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Acoustics_terms"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Geometric"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Statistic"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Theory"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Wave"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Geometric -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Geometric">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Has_method"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Radiance_transfer_group"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Has_method"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Tracing_group"/>
+                    </owl:Restriction>
+                </owl:unionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Purpose"/>
+                        <owl:hasValue>Lecture</owl:hasValue>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Purpose"/>
+                        <owl:hasValue>Meeting</owl:hasValue>
+                    </owl:Restriction>
+                </owl:unionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Absorbation_coefficient"/>
+                <owl:someValuesFrom>
+                    <rdfs:Datatype>
+                        <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+                        <owl:withRestrictions rdf:parseType="Collection">
+                            <rdf:Description>
+                                <xsd:maxInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.25</xsd:maxInclusive>
+                            </rdf:Description>
+                        </owl:withRestrictions>
+                    </rdfs:Datatype>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Length_plain"/>
+                <owl:someValuesFrom>
+                    <rdfs:Datatype>
+                        <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+                        <owl:withRestrictions rdf:parseType="Collection">
+                            <rdf:Description>
+                                <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#double">10.0</xsd:minInclusive>
+                            </rdf:Description>
+                        </owl:withRestrictions>
+                    </rdfs:Datatype>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Volume"/>
+                <owl:someValuesFrom>
+                    <rdfs:Datatype>
+                        <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+                        <owl:withRestrictions rdf:parseType="Collection">
+                            <rdf:Description>
+                                <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#double">900.0</xsd:minInclusive>
+                            </rdf:Description>
+                        </owl:withRestrictions>
+                    </rdfs:Datatype>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Consider_separate_reflections"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:hasValue>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Is_in_near_area"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:hasValue>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Building"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Theory"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Volume"/>
+                <owl:someValuesFrom>
+                    <rdfs:Datatype>
+                        <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+                        <owl:withRestrictions rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                    </rdfs:Datatype>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#High_frequency"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Low_frequency"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Middle_frequency"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#High_frequency -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#High_frequency">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Frequency"/>
+                <owl:someValuesFrom>
+                    <rdfs:Datatype>
+                        <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+                        <owl:withRestrictions rdf:parseType="Collection">
+                            <rdf:Description>
+                                <xsd:minExclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#double">7000.0</xsd:minExclusive>
+                            </rdf:Description>
+                            <rdf:Description>
+                                <xsd:maxInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#double">20000.0</xsd:maxInclusive>
+                            </rdf:Description>
+                        </owl:withRestrictions>
+                    </rdfs:Datatype>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Frequency_type"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Statistic"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Theory"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Wave"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Image_sources -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Image_sources">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Curvature"/>
+                                <owl:someValuesFrom>
+                                    <rdfs:Datatype>
+                                        <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+                                        <owl:withRestrictions rdf:parseType="Collection">
+                                            <rdf:Description>
+                                                <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#double">-180.0</xsd:minInclusive>
+                                            </rdf:Description>
+                                            <rdf:Description>
+                                                <xsd:maxExclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0</xsd:maxExclusive>
+                                            </rdf:Description>
+                                        </owl:withRestrictions>
+                                    </rdfs:Datatype>
+                                </owl:someValuesFrom>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Curvature"/>
+                                <owl:someValuesFrom>
+                                    <rdfs:Datatype>
+                                        <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+                                        <owl:withRestrictions rdf:parseType="Collection">
+                                            <rdf:Description>
+                                                <xsd:minExclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0</xsd:minExclusive>
+                                            </rdf:Description>
+                                            <rdf:Description>
+                                                <xsd:maxInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#double">180.0</xsd:maxInclusive>
+                                            </rdf:Description>
+                                        </owl:withRestrictions>
+                                    </rdfs:Datatype>
+                                </owl:someValuesFrom>
+                            </owl:Restriction>
+                        </owl:unionOf>
+                    </owl:Class>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Is_complex_building"/>
+                        <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:hasValue>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Need_refraction_structure"/>
+                        <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:hasValue>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Building"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Cone_tracing"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Particle_tracing"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Path_tracing"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Tracing_group"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Is_method_of"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Geometric"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Language_term -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Language_term">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Low_frequency -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Low_frequency">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Frequency"/>
+                <owl:someValuesFrom>
+                    <rdfs:Datatype>
+                        <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+                        <owl:withRestrictions rdf:parseType="Collection">
+                            <rdf:Description>
+                                <xsd:minExclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#double">16.0</xsd:minExclusive>
+                            </rdf:Description>
+                            <rdf:Description>
+                                <xsd:maxInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#double">150.0</xsd:maxInclusive>
+                            </rdf:Description>
+                        </owl:withRestrictions>
+                    </rdfs:Datatype>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Frequency_type"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Statistic"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Theory"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Wave"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Material -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Material">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Acoustics_terms"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Method -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Method">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Acoustics_terms"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Middle_frequency -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Middle_frequency">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Frequency"/>
+                <owl:someValuesFrom>
+                    <rdfs:Datatype>
+                        <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+                        <owl:withRestrictions rdf:parseType="Collection">
+                            <rdf:Description>
+                                <xsd:minExclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#double">150.0</xsd:minExclusive>
+                            </rdf:Description>
+                            <rdf:Description>
+                                <xsd:maxInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#double">7000.0</xsd:maxInclusive>
+                            </rdf:Description>
+                        </owl:withRestrictions>
+                    </rdfs:Datatype>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Frequency_type"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Statistic"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Theory"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Wave"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Particle_tracing -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Particle_tracing">
+        <owl:equivalentClass rdf:resource="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Path_tracing"/>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Curvature"/>
+                                <owl:someValuesFrom>
+                                    <rdfs:Datatype>
+                                        <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+                                        <owl:withRestrictions rdf:parseType="Collection">
+                                            <rdf:Description>
+                                                <xsd:minExclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0</xsd:minExclusive>
+                                            </rdf:Description>
+                                            <rdf:Description>
+                                                <xsd:maxInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#double">180.0</xsd:maxInclusive>
+                                            </rdf:Description>
+                                        </owl:withRestrictions>
+                                    </rdfs:Datatype>
+                                </owl:someValuesFrom>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Is_complex_building"/>
+                                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:hasValue>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Curvature"/>
+                        <owl:someValuesFrom>
+                            <rdfs:Datatype>
+                                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+                                <owl:withRestrictions rdf:parseType="Collection">
+                                    <rdf:Description>
+                                        <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#double">-180.0</xsd:minInclusive>
+                                    </rdf:Description>
+                                    <rdf:Description>
+                                        <xsd:maxExclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0</xsd:maxExclusive>
+                                    </rdf:Description>
+                                </owl:withRestrictions>
+                            </rdfs:Datatype>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:unionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Tracing_group"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Path_tracing -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Path_tracing">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Curvature"/>
+                                <owl:someValuesFrom>
+                                    <rdfs:Datatype>
+                                        <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+                                        <owl:withRestrictions rdf:parseType="Collection">
+                                            <rdf:Description>
+                                                <xsd:minExclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0</xsd:minExclusive>
+                                            </rdf:Description>
+                                            <rdf:Description>
+                                                <xsd:maxInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#double">180.0</xsd:maxInclusive>
+                                            </rdf:Description>
+                                        </owl:withRestrictions>
+                                    </rdfs:Datatype>
+                                </owl:someValuesFrom>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Is_complex_building"/>
+                                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:hasValue>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Curvature"/>
+                        <owl:someValuesFrom>
+                            <rdfs:Datatype>
+                                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+                                <owl:withRestrictions rdf:parseType="Collection">
+                                    <rdf:Description>
+                                        <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#double">-180.0</xsd:minInclusive>
+                                    </rdf:Description>
+                                    <rdf:Description>
+                                        <xsd:maxExclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0</xsd:maxExclusive>
+                                    </rdf:Description>
+                                </owl:withRestrictions>
+                            </rdfs:Datatype>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:unionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Tracing_group"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Plain -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Plain">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Acoustics_terms"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Radiance_transfer -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Radiance_transfer">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Radiance_transfer_group"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Radiance_transfer_group -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Radiance_transfer_group">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Curvature"/>
+                        <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Is_complex_building"/>
+                        <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:hasValue>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Need_accuracy"/>
+                        <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:hasValue>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Need_refraction_structure"/>
+                        <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:hasValue>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Need_wave_effects"/>
+                        <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</owl:hasValue>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Building"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Method"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Is_method_of"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Geometric"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Radiosity -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Radiosity">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Radiance_transfer_group"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Ray_tracing -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Ray_tracing">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Curvature"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0</owl:hasValue>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Is_complex_building"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</owl:hasValue>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Building"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Tracing_group"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Source -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Source">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Has_amplitude_frequency"/>
+                        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                        <owl:onClass rdf:resource="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Amplitude_frequency"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Has_frequency_direction"/>
+                        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                        <owl:onClass rdf:resource="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Frequency_direction"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Acoustics_terms"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#source"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Term_name"/>
+                <owl:hasValue>\src</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Statistic -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Statistic">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Volume"/>
+                        <owl:someValuesFrom>
+                            <rdfs:Datatype>
+                                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+                                <owl:withRestrictions rdf:parseType="Collection">
+                                    <rdf:Description>
+                                        <xsd:maxExclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#double">900.0</xsd:maxExclusive>
+                                    </rdf:Description>
+                                </owl:withRestrictions>
+                            </rdfs:Datatype>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Is_in_near_area"/>
+                        <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</owl:hasValue>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Volume"/>
+                <owl:someValuesFrom>
+                    <rdfs:Datatype>
+                        <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+                        <owl:withRestrictions rdf:parseType="Collection">
+                            <rdf:Description>
+                                <xsd:maxExclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#double">900.0</xsd:maxExclusive>
+                            </rdf:Description>
+                        </owl:withRestrictions>
+                    </rdfs:Datatype>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Consider_separate_reflections"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</owl:hasValue>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Is_in_near_area"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</owl:hasValue>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Building"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Theory"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Statistics -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Statistics">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Method"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Is_method_of"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Statistic"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Terms_methods -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Terms_methods">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Language_term"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Theory -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Theory">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Acoustics_terms"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Geometric"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Statistic"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Wave"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Tracing_group -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Tracing_group">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Need_fast_simulation"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:hasValue>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Need_wave_effects"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:hasValue>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Method"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Is_method_of"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Geometric"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Transfer_length -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Transfer_length">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Method"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Is_method_of"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Wave"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Wave -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Wave">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Theory"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#frequency -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#frequency">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Term_name"/>
+                        <owl:hasValue>\f</owl:hasValue>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Term_name"/>
+                        <owl:hasValue>\nu</owl:hasValue>
+                    </owl:Restriction>
+                </owl:unionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Language_term"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#source -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#source">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Term_name"/>
+                <owl:hasValue>\src</owl:hasValue>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Language_term"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alinachusova/ontologies/2023/2/AcousticsMethodsAndLang#Lecture -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alinachusova/ontologies/2023/2/AcousticsMethodsAndLang#Lecture">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Building"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alinachusova/ontologies/2023/2/AcousticsMethodsAndLang#Living -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alinachusova/ontologies/2023/2/AcousticsMethodsAndLang#Living">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Building"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alinachusova/ontologies/2023/2/AcousticsMethodsAndLang#Selection_materials -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alinachusova/ontologies/2023/2/AcousticsMethodsAndLang#Selection_materials">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/alinachusova/ontologies/2023/2/AcousticsMethodsAndLang#Tasks"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/alinachusova/ontologies/2023/2/AcousticsMethodsAndLang#Solving_for"/>
+                        <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/alinachusova/ontologies/2023/2/AcousticsMethodsAndLang#Living"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/alinachusova/ontologies/2023/2/AcousticsMethodsAndLang#Solving_result"/>
+                        <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Material"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/alinachusova/ontologies/2023/2/AcousticsMethodsAndLang#Using_for_solving_term"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Plain"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/alinachusova/ontologies/2023/2/AcousticsMethodsAndLang#Using_for_solving_term"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Source"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alinachusova/ontologies/2023/2/AcousticsMethodsAndLang#Tasks"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/alinachusova/ontologies/2023/2/AcousticsMethodsAndLang#Simulation_sound"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alinachusova/ontologies/2023/2/AcousticsMethodsAndLang#Simulation_sound -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alinachusova/ontologies/2023/2/AcousticsMethodsAndLang#Simulation_sound">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/alinachusova/ontologies/2023/2/AcousticsMethodsAndLang#Tasks"/>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/alinachusova/ontologies/2023/2/AcousticsMethodsAndLang#Solving_for"/>
+                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/alinachusova/ontologies/2023/2/AcousticsMethodsAndLang#Lecture"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/alinachusova/ontologies/2023/2/AcousticsMethodsAndLang#Solving_for"/>
+                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/alinachusova/ontologies/2023/2/AcousticsMethodsAndLang#Living"/>
+                            </owl:Restriction>
+                        </owl:unionOf>
+                    </owl:Class>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/alinachusova/ontologies/2023/2/AcousticsMethodsAndLang#Solving_result"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/alinachusova/ontologies/2023/2/AcousticsMethodsAndLang#Sound"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/alinachusova/ontologies/2023/2/AcousticsMethodsAndLang#Using_for_solving_term"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Material"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/alinachusova/ontologies/2023/2/AcousticsMethodsAndLang#Using_for_solving_term"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Plain"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alinachusova/ontologies/2023/2/AcousticsMethodsAndLang#Tasks"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alinachusova/ontologies/2023/2/AcousticsMethodsAndLang#Sound -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alinachusova/ontologies/2023/2/AcousticsMethodsAndLang#Sound">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Acoustics_terms"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alinachusova/ontologies/2023/2/AcousticsMethodsAndLang#Tasks -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alinachusova/ontologies/2023/2/AcousticsMethodsAndLang#Tasks">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alinachusova/ontologies/2023/2/AcousticsMethodsAndLang#Theatre -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alinachusova/ontologies/2023/2/AcousticsMethodsAndLang#Theatre">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Building"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Emit -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Emit">
+        <rdf:type rdf:resource="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Emit_method"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Terms_methods"/>
+        <AcousticsMethods:Is_term_method rdf:resource="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#src"/>
+        <AcousticsMethods:Numeric_argument_type rdf:resource="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#freq"/>
+        <AcousticsMethods:Numerical_type rdf:resource="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#freq"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Middle_Hall_FEFU_Ceiling -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Middle_Hall_FEFU_Ceiling">
+        <rdf:type rdf:resource="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Acoustics_terms"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Plain"/>
+        <AcousticsMethods:Plains_of rdf:resource="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Middle_Hall_FEFU_Chars"/>
+        <AcousticsMethods:Plain_of rdf:resource="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Middle_Hall_FEFU_Chars"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Middle_Hall_FEFU_Chars -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Middle_Hall_FEFU_Chars">
+        <rdf:type rdf:resource="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Acoustics_terms"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Beam_tracing"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Building"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Geometric"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Method"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Ray_tracing"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Theory"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Tracing_group"/>
+        <AcousticsMethods:Has_plain rdf:resource="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Middle_Hall_FEFU_Ceiling"/>
+        <AcousticsMethods:Has_plain rdf:resource="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Middle_Hall_FEFU_Floor"/>
+        <AcousticsMethods:Has_plain rdf:resource="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Middle_Hall_FEFU_Wall1"/>
+        <AcousticsMethods:Has_plain rdf:resource="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Middle_Hall_FEFU_Wall2"/>
+        <AcousticsMethods:Has_plain rdf:resource="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Middle_Hall_FEFU_Wall3"/>
+        <AcousticsMethods:Has_plain rdf:resource="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Middle_Hall_FEFU_Wall4"/>
+        <AcousticsMethods:Is_closed_building rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</AcousticsMethods:Is_closed_building>
+        <AcousticsMethods:Is_complex_building rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</AcousticsMethods:Is_complex_building>
+        <AcousticsMethods:Purpose>Meeting</AcousticsMethods:Purpose>
+        <AcousticsMethods:Volume rdf:datatype="http://www.w3.org/2001/XMLSchema#double">6750.0</AcousticsMethods:Volume>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Middle_Hall_FEFU_Floor -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Middle_Hall_FEFU_Floor">
+        <rdf:type rdf:resource="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Acoustics_terms"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Building"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Geometric"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Plain"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Theory"/>
+        <AcousticsMethods:Plains_of rdf:resource="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Middle_Hall_FEFU_Chars"/>
+        <AcousticsMethods:Length_plain rdf:datatype="http://www.w3.org/2001/XMLSchema#double">35.0</AcousticsMethods:Length_plain>
+        <AcousticsMethods:Plain_of rdf:resource="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Middle_Hall_FEFU_Chars"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Middle_Hall_FEFU_Wall1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Middle_Hall_FEFU_Wall1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Acoustics_terms"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Building"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Geometric"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Plain"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Theory"/>
+        <AcousticsMethods:Plains_of rdf:resource="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Middle_Hall_FEFU_Chars"/>
+        <AcousticsMethods:Length_plain rdf:datatype="http://www.w3.org/2001/XMLSchema#double">30.0</AcousticsMethods:Length_plain>
+        <AcousticsMethods:Plain_of rdf:resource="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Middle_Hall_FEFU_Chars"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Middle_Hall_FEFU_Wall2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Middle_Hall_FEFU_Wall2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Acoustics_terms"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Building"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Geometric"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Plain"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Theory"/>
+        <AcousticsMethods:Plains_of rdf:resource="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Middle_Hall_FEFU_Chars"/>
+        <AcousticsMethods:Length_plain rdf:datatype="http://www.w3.org/2001/XMLSchema#double">30.0</AcousticsMethods:Length_plain>
+        <AcousticsMethods:Plain_of rdf:resource="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Middle_Hall_FEFU_Chars"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Middle_Hall_FEFU_Wall3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Middle_Hall_FEFU_Wall3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Acoustics_terms"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Building"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Geometric"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Plain"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Theory"/>
+        <AcousticsMethods:Plains_of rdf:resource="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Middle_Hall_FEFU_Chars"/>
+        <AcousticsMethods:Length_plain rdf:datatype="http://www.w3.org/2001/XMLSchema#double">30.0</AcousticsMethods:Length_plain>
+        <AcousticsMethods:Plain_of rdf:resource="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Middle_Hall_FEFU_Chars"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Middle_Hall_FEFU_Wall4 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Middle_Hall_FEFU_Wall4">
+        <rdf:type rdf:resource="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Acoustics_terms"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Building"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Geometric"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Plain"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Theory"/>
+        <AcousticsMethods:Plains_of rdf:resource="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Middle_Hall_FEFU_Chars"/>
+        <AcousticsMethods:Length_plain rdf:datatype="http://www.w3.org/2001/XMLSchema#double">30.0</AcousticsMethods:Length_plain>
+        <AcousticsMethods:Plain_of rdf:resource="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Middle_Hall_FEFU_Chars"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Room1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Room1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/alinachusova/ontologies/2023/2/AcousticsMethodsAndLang#Living"/>
+        <AcousticsMethods:Building_characterized_by rdf:resource="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Room1Chars"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Room1Chars -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Room1Chars">
+        <rdf:type rdf:resource="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Acoustics_terms"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Building"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Statistic"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Theory"/>
+        <AcousticsMethods:Is_in_near_area rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</AcousticsMethods:Is_in_near_area>
+        <AcousticsMethods:Volume rdf:datatype="http://www.w3.org/2001/XMLSchema#double">801.0</AcousticsMethods:Volume>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Room2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Room2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Building"/>
+        <AcousticsMethods:Building_characterized_by rdf:resource="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Room2Chars"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Room2Chars -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Room2Chars">
+        <rdf:type rdf:resource="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Acoustics_terms"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Building"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Geometric"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Statistic"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Theory"/>
+        <AcousticsMethods:Is_in_near_area rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</AcousticsMethods:Is_in_near_area>
+        <AcousticsMethods:Volume rdf:datatype="http://www.w3.org/2001/XMLSchema#double">90.0</AcousticsMethods:Volume>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Siniy_Hall_FEFU -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Siniy_Hall_FEFU">
+        <rdf:type rdf:resource="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Acoustics_terms"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Building"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Geometric"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Theory"/>
+        <AcousticsMethods:Has_plain rdf:resource="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Siniy_Hall_FEFU_Wall1"/>
+        <AcousticsMethods:Is_closed_building rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</AcousticsMethods:Is_closed_building>
+        <AcousticsMethods:Is_complex_building rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</AcousticsMethods:Is_complex_building>
+        <AcousticsMethods:Volume rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1900.0</AcousticsMethods:Volume>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Siniy_Hall_FEFU_Wall1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Siniy_Hall_FEFU_Wall1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Acoustics_terms"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Building"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Geometric"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Plain"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Theory"/>
+        <AcousticsMethods:Plains_of rdf:resource="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Siniy_Hall_FEFU"/>
+        <AcousticsMethods:Absorbation_coefficient rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.25</AcousticsMethods:Absorbation_coefficient>
+        <AcousticsMethods:Curvature rdf:datatype="http://www.w3.org/2001/XMLSchema#double">50.0</AcousticsMethods:Curvature>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#TestSource -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#TestSource">
+        <rdf:type rdf:resource="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Acoustics_terms"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Language_term"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Source"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#source"/>
+        <AcousticsMethods:Has_amplitude_frequency rdf:resource="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#TestSourceAF"/>
+        <AcousticsMethods:Has_frequency_direction rdf:resource="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#TestSourceFD"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#TestSourceAF -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#TestSourceAF">
+        <rdf:type rdf:resource="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Acoustics_terms"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Amplitude_frequency"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#TestSourceFD -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#TestSourceFD">
+        <rdf:type rdf:resource="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Acoustics_terms"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Frequency_direction"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#freq -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#freq">
+        <rdf:type rdf:resource="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Language_term"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#frequency"/>
+        <AcousticsMethods:Numerical_type rdf:resource="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#freq"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#src -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#src">
+        <rdf:type rdf:resource="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Language_term"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#source"/>
+        <AcousticsMethods:Has_many rdf:resource="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#freq"/>
+        <AcousticsMethods:Has_term_method rdf:resource="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Emit"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/alinachusova/ontologies/2023/2/AcousticsMethodsAndLang#Sound_static -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alinachusova/ontologies/2023/2/AcousticsMethodsAndLang#Sound_static">
+        <rdf:type rdf:resource="http://www.semanticweb.org/alinachusova/ontologies/2023/2/AcousticsMethodsAndLang#Sound"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/alinachusova/ontologies/2023/2/AcousticsMethodsAndLang#task_simulation_sound -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alinachusova/ontologies/2023/2/AcousticsMethodsAndLang#task_simulation_sound">
+        <Solving_for rdf:resource="http://www.semanticweb.org/alinachusova/ontologies/2022/1/AcousticsMethods#Room1"/>
+        <Solving_result rdf:resource="http://www.semanticweb.org/alinachusova/ontologies/2023/2/AcousticsMethodsAndLang#Sound_static"/>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
