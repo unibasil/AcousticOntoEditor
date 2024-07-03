@@ -8,7 +8,7 @@ class Entity(models.Model):
         return self.name
     id = models.AutoField(primary_key=True)
     name = models.CharField(max_length=250)
-    desc = models.TextField(null=True, blank=True)
+    desc = models.TextField(blank=True, default='')
 
 
 # Отнощения между сущностями
@@ -42,4 +42,26 @@ class EntityField(models.Model):
     id = models.AutoField(primary_key=True)
     id_entity = models.ForeignKey(Entity, on_delete=models.CASCADE)
     id_attribute = models.ForeignKey(Attribute, on_delete=models.CASCADE)
+
+
+# Типы объектных атрибутов (привязка сущности к атрибуту пипа "Объект", который может выступать в роли поля в сушности)
+class ObjectAttributeType(models.Model):
+    id = models.AutoField(primary_key=True)
+    id_attribute = models.ForeignKey(Attribute, on_delete=models.CASCADE)
+    id_entity = models.ForeignKey(Entity, on_delete=models.CASCADE)
+
+
+# Экземпляры сущностей (объекты)
+class Object(models.Model):
+    id = models.AutoField(primary_key=True)
+    id_entity = models.ForeignKey(Entity, on_delete=models.CASCADE)
+    name = models.CharField(max_length=250)
+
+
+# Значение поля экземпляра
+class ObjectFieldValue(models.Model):
+    id = models.AutoField(primary_key=True)
+    id_object = models.ForeignKey(Object, on_delete=models.CASCADE)
+    id_field = models.ForeignKey(EntityField, on_delete=models.CASCADE)
+    value = models.TextField()
 

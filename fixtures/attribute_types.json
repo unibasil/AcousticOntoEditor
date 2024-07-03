@@ -1,0 +1,42 @@
+[
+  {
+    "model": "editor.attributetype",
+    "pk": 1,
+    "fields": {
+      "name": "Text",
+      "desc": "Строковые и текстовые значения"
+    }
+  },
+  {
+    "model": "editor.attributetype",
+    "pk": 2,
+    "fields": {
+      "name": "Integer",
+      "desc": "Целые значения"
+    }
+  },
+  {
+    "model": "editor.attributetype",
+    "pk": 3,
+    "fields": {
+      "name": "Real",
+      "desc": "Вещественные значения"
+    }
+  },
+  {
+    "model": "editor.attributetype",
+    "pk": 4,
+    "fields": {
+      "name": "Boolean",
+      "desc": "Логические значения"
+    }
+  },
+  {
+    "model": "editor.attributetype",
+    "pk": 5,
+    "fields": {
+      "name": "Object",
+      "desc": "Объектные значения"
+    }
+  }
+]
