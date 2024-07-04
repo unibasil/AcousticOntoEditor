@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>AcousticOntoEditor</title>
+    {% load static %}
+    <script src="{% static 'vendor/bootstrap/js/bootstrap.min.js' %}"></script>
+    <link href="{% static 'vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet"></head>
+<body>
+<div class="container-fluid">
+
+{# Navbar #}
+<nav class="navbar navbar-expand-lg navbar-light bg-light navbar-dark bg-dark">
+
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">AcousticOntoEditor</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link" href="admin/">Admin</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>    
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-3 col-50vh bg-dark-subtle">
+{#            {% block context %}{% endblock %}#}
+        </div>
+        <div class="col-md-9 bg-white">
+            {% block diagram %}
+                Diagram goes here
+            {% endblock %}
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-3 col-50vh bg-dark">
+            <div class="button">aaa</div>
+        </div>
+        <div class="col-md-9 bg-white">
+            <div class="button">bbb</div>
+        </div>
+    </div>
+
+</div>
+    
+
+</div>
+</body>
+</html>

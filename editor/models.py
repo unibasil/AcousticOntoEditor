@@ -1,7 +1,15 @@
 from django.db import models
+
+entities = []
+attributes = []
+attribute_types = []
+relationships = []
+objects = []
+entity_fields = []
+object_field_values = []
+
+
 # Create your models here.
-
-
 # Сущности
 class Entity(models.Model):
     def _str_(self):

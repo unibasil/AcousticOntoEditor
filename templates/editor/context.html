@@ -1,0 +1,25 @@
+{% extends "./index.html" %}
+
+{% block context %}
+<h4>Attribute types</h4>
+<ul>
+{{ context }}
+{% for t in attributetypes %}
+    <li>{{ t.name }}</li>
+{% endfor %}
+</ul>
+
+<h4>Attributes</h4>
+<ul>
+{% for t in attributes %}
+    <li>{{ t.name }}</li>
+{% endfor %}
+</ul>
+
+<h4>Entities</h4>
+<ul>
+{% for a in entities %}
+    <li>{{ a.name }}</li>
+{% endfor %}
+</ul>
+{% endblock %}
