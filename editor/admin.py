@@ -14,6 +14,7 @@ from .models import Relationship
 class AttributeTypeAdmin(admin.ModelAdmin):
     list_display = ["id", "name", "desc"]
 
+
 class AttributeAdmin(admin.ModelAdmin):
     list_display = ["id", "name", "desc"]
 
@@ -21,8 +22,9 @@ class AttributeAdmin(admin.ModelAdmin):
 class EntityAdmin(admin.ModelAdmin):
     list_display = ["id", "name", "desc"]
 
+
 class ObjectAdmin(admin.ModelAdmin):
-    list_display = ["id", "name"]
+    list_display = ["id", "id_entity", "name"]
 
 
 admin.site.register(Attribute, AttributeAdmin)

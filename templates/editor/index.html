@@ -15,14 +15,16 @@
     }
 
     .main-container {
-        min-height: 100%; /* Устанавливаем минимальную высоту контейнера равной высоте страницы */
-        max-height: 100%; /* Устанавливаем минимальную высоту контейнера равной высоте страницы */
+        max-height: 100vh;
+        height: 100vh;
+        {#min-height: 100%; /* Устанавливаем минимальную высоту контейнера равной высоте страницы */#}
+        {#max-height: 100%; /* Устанавливаем минимальную высоту контейнера равной высоте страницы */#}
     }
 
     .accordion-body {
         padding: 0;
     }
-    
+
     .table {
         padding: 0;
         margin-bottom: 0;
@@ -33,21 +35,31 @@
     }
 
     .scrollable {
-        height: 100%;
-        overflow-y: scroll;
+        height: calc(100vh - 56px);
+        overflow-y: auto;
     }
-    
+
     .max-height {
-        height: 100%;
+        height: calc(100vh - 56px);
     }
-    
+
     .no-overflow {
         overflow: hidden;
     }
+
+    #left-panel {
+        padding-left: 0;
+        padding-right: 0;
+    }
     
-    .pad40-top {
-        padding-top: 40px;
-    }    
+    .accordion-button:not(.collapsed) {
+        background-color: #ddd;
+    }
+    
+    .accordion-button {
+        background-color: #ddd;
+    }
+    
 </style>
 <body>
 <div class="container-fluid main-container" style="max-height: 100vh">
@@ -73,48 +85,44 @@
     </nav>
 
     {# Workspace #}
-    <div class="container-fluid max-height bg-light-subtle no-overflow" >
-        <div class="row max-height">
-            <div class="col-md-3 scrollable ">
+    <div id="left-panel" class="container-fluid no-overflow max-height" >
+        <div class="row">
+            <div class="col-md-3 scrollable">
 
-                <div class="accordion" id="all-data-list">
+                <div class="accordion accordion-flush" id="all-data-list">
                     {% for i in myRange %}
                         <div class="accordion-item">
-                            <div class="accordion-header bg-info-subtle" id="heading{{ i }}">
-                                <button class="accordion-button bg-info-subtle" type="button" data-bs-toggle="collapse"
+                            <div class="accordion-header" id="heading{{ i }}">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
                                         data-bs-target="#collapse{{ i }}" aria-expanded="false"
                                         aria-controls="collapse{{ i }}">
-                                    Accordion Item {{ i }}
+                                    {{ i }}
                                 </button>
                             </div>
-                            <div id="collapse{{ i }}" class="accordion-collapse collapse show"
-                                 aria-labelledby="heading{{ i }}" data-bs-parent="#accordionExample">
+                            <div id="collapse{{ i }}" class="accordion-collapse collapse"
+                                 aria-labelledby="heading{{ i }}">
                                 <div class="accordion-body ">
                                     <table class="table table-bordered">
                                         <tbody>
                                         <tr>
-                                            <td>Mark</td>
-                                            <td>Otto</td>
+                                            <td style="width: 90%">Building</td>
+                                            <td><button type="button" class="btn btn-info">Edit</button></td>
+                                            <td><button type="button" class="btn btn-danger">Delete</button></td>
                                         </tr>
                                         <tr>
-                                            <td>Jacob</td>
-                                            <td>Thornton</td>
+                                            <td style="width: 90%">Building</td>
+                                            <td><button type="button" class="btn btn-info">Edit</button></td>
+                                            <td><button type="button" class="btn btn-danger">Delete</button></td>
                                         </tr>
                                         <tr>
-                                            <td>Jacob</td>
-                                            <td>Thornton</td>
+                                            <td style="width: 90%">Building</td>
+                                            <td><button type="button" class="btn btn-info">Edit</button></td>
+                                            <td><button type="button" class="btn btn-danger">Delete</button></td>
                                         </tr>
                                         <tr>
-                                            <td>Jacob</td>
-                                            <td>Thornton</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Jacob</td>
-                                            <td>Thornton</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Jacob</td>
-                                            <td>Thornton</td>
+                                            <td style="width: 90%">Building</td>
+                                            <td><button type="button" class="btn btn-info">Edit</button></td>
+                                            <td><button type="button" class="btn btn-danger">Delete</button></td>
                                         </tr>
                                         </tbody>
                                     </table>
@@ -126,8 +134,8 @@
                 </div>
             </div>
 
-            <div class="col-md-9 bg-info-subtle scrollable max-height">
-                <h1>...</h1>
+            <div id="right-panel" class="col-md-9">
+                <h1>Diagram goes here</h1>
             </div>
 
         </div>

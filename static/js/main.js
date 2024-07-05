@@ -1,14 +1,14 @@
 function getData() {
     return Promise.all([
-    fetch('/attribute_types/'),
+    fetch('/attribute-types/').then((a) => a.json()),
     fetch('/attributes/'),
-    fetch('/emtities/'),
-    fetch('/emtity-fields/'),
+    fetch('/entities/'),
+    fetch('/entity-fields/'),
     fetch('/objects/'),
     fetch('/object-field-values/')
     ])
 }
 
 getData().then((result) => {
-    console.log(result.join());
+    console.log(result[0]);
 })

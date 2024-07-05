@@ -19,7 +19,7 @@ from .models import (Attribute,
 def index(request):
     # if not request.user.is_authenticated:
     #     return redirect(f"{settings.LOGIN_URL}?next={request.path}")
-    my_range = range(1, 6)
+    my_range = ["Classes", "Objects", "Attributes", "Attribute Types", "Relationships",]
     context = {
         "attributes": Attribute.objects.all(),
         "attributetypes": AttributeType.objects.all(),
@@ -74,14 +74,43 @@ def get_entities(request):
     return HttpResponse(content=json, content_type="application/json")
 
 
-# ---------
-# Сущности
-# ---------
+# --------------
+# Поля сущностей
+# --------------
+def get_entity_field(request, pk):
+    obj = get_object_or_404(EntityField, pk=pk)
+    json = serializers.serialize('json', [obj, ])
+    return HttpResponse(content=json, content_type="application/json")
+
+
+def get_entity_fields(request):
+    json = serializers.serialize('json', EntityField.objects.all())
+    return HttpResponse(content=json, content_type="application/json")
+
+
+# ----------
+# Экземпляры
+# ----------
 def get_object(request, pk):
-    json = serializers.serialize('json', [get_object_or_404(Object, pk=pk), ])
+    obj = get_object_or_404(Object, pk=pk)
+    json = serializers.serialize('json', [obj, ])
     return HttpResponse(content=json, content_type="application/json")
 
 
 def get_objects(request):
     json = serializers.serialize('json', Object.objects.all())
+    return HttpResponse(content=json, content_type="application/json")
+
+
+# --------------------------
+# Значения полей экземпляров
+# --------------------------
+def get_object_field_value(request, pk):
+    obj = get_object_or_404(ObjectFieldValue, pk=pk)
+    json = serializers.serialize('json', [obj, ])
+    return HttpResponse(content=json, content_type="application/json")
+
+
+def get_object_field_values(request):
+    json = serializers.serialize('json', ObjectFieldValue.objects.all())
     return HttpResponse(content=json, content_type="application/json")
