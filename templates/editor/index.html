@@ -5,51 +5,133 @@
     <title>AcousticOntoEditor</title>
     {% load static %}
     <script src="{% static 'vendor/bootstrap/js/bootstrap.min.js' %}"></script>
-    <link href="{% static 'vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet"></head>
-<body>
-<div class="container-fluid">
+    <link href="{% static 'vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+</head>
+<script src="{% static 'js/main.js' %}"></script>
+<style>
+    html, body {
+        height: 100%; /* Устанавливаем высоту для всей страницы */
+        margin: 0; /* Убираем стандартные отступы */
+    }
 
-{# Navbar #}
-<nav class="navbar navbar-expand-lg navbar-light bg-light navbar-dark bg-dark">
+    .main-container {
+        min-height: 100%; /* Устанавливаем минимальную высоту контейнера равной высоте страницы */
+        max-height: 100%; /* Устанавливаем минимальную высоту контейнера равной высоте страницы */
+    }
 
-  <div class="container-fluid">
-    <a class="navbar-brand" href="#">AcousticOntoEditor</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-        <li class="nav-item">
-          <a class="nav-link" href="admin/">Admin</a>
-        </li>
-      </ul>
-    </div>
-  </div>
-</nav>    
-
-<div class="container-fluid">
-    <div class="row">
-        <div class="col-md-3 col-50vh bg-dark-subtle">
-{#            {% block context %}{% endblock %}#}
-        </div>
-        <div class="col-md-9 bg-white">
-            {% block diagram %}
-                Diagram goes here
-            {% endblock %}
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-md-3 col-50vh bg-dark">
-            <div class="button">aaa</div>
-        </div>
-        <div class="col-md-9 bg-white">
-            <div class="button">bbb</div>
-        </div>
-    </div>
-
-</div>
+    .accordion-body {
+        padding: 0;
+    }
     
+    .table {
+        padding: 0;
+        margin-bottom: 0;
+    }
 
+    .accordion-button {
+        padding: 8px;
+    }
+
+    .scrollable {
+        height: 100%;
+        overflow-y: scroll;
+    }
+    
+    .max-height {
+        height: 100%;
+    }
+    
+    .no-overflow {
+        overflow: hidden;
+    }
+    
+    .pad40-top {
+        padding-top: 40px;
+    }    
+</style>
+<body>
+<div class="container-fluid main-container" style="max-height: 100vh">
+
+    {# Navbar #}
+    <nav class="navbar navbar-expand-lg navbar-light bg-light navbar-dark bg-dark">
+
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">AcousticOntoEditor</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="admin/">Admin</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    {# Workspace #}
+    <div class="container-fluid max-height bg-light-subtle no-overflow" >
+        <div class="row max-height">
+            <div class="col-md-3 scrollable ">
+
+                <div class="accordion" id="all-data-list">
+                    {% for i in myRange %}
+                        <div class="accordion-item">
+                            <div class="accordion-header bg-info-subtle" id="heading{{ i }}">
+                                <button class="accordion-button bg-info-subtle" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapse{{ i }}" aria-expanded="false"
+                                        aria-controls="collapse{{ i }}">
+                                    Accordion Item {{ i }}
+                                </button>
+                            </div>
+                            <div id="collapse{{ i }}" class="accordion-collapse collapse show"
+                                 aria-labelledby="heading{{ i }}" data-bs-parent="#accordionExample">
+                                <div class="accordion-body ">
+                                    <table class="table table-bordered">
+                                        <tbody>
+                                        <tr>
+                                            <td>Mark</td>
+                                            <td>Otto</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Jacob</td>
+                                            <td>Thornton</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Jacob</td>
+                                            <td>Thornton</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Jacob</td>
+                                            <td>Thornton</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Jacob</td>
+                                            <td>Thornton</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Jacob</td>
+                                            <td>Thornton</td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+
+                        </div>
+                    {% endfor %}
+                </div>
+            </div>
+
+            <div class="col-md-9 bg-info-subtle scrollable max-height">
+                <h1>...</h1>
+            </div>
+
+        </div>
+    </div>
 </div>
 </body>
 </html>

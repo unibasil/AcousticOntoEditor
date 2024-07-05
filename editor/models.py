@@ -1,4 +1,5 @@
 from django.db import models
+from django.utils.functional import cached_property
 
 entities = []
 attributes = []
@@ -72,4 +73,3 @@ class ObjectFieldValue(models.Model):
     id_object = models.ForeignKey(Object, on_delete=models.CASCADE)
     id_field = models.ForeignKey(EntityField, on_delete=models.CASCADE)
     value = models.TextField()
-

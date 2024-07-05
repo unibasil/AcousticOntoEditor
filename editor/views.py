@@ -19,6 +19,7 @@ from .models import (Attribute,
 def index(request):
     # if not request.user.is_authenticated:
     #     return redirect(f"{settings.LOGIN_URL}?next={request.path}")
+    my_range = range(1, 6)
     context = {
         "attributes": Attribute.objects.all(),
         "attributetypes": AttributeType.objects.all(),
@@ -28,8 +29,9 @@ def index(request):
         "objects": Object.objects.all(),
         "objectfields": ObjectFieldValue.objects.all(),
         "objectattributetype": ObjectAttributeType.objects.all(),
+        "myRange": my_range,
     }
-    return render(request, 'editor/context.html', context=context)
+    return render(request, 'editor/index.html', context=context)
 
 
 # ---------------
