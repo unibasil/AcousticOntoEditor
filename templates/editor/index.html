@@ -6,6 +6,7 @@
     {% load static %}
     <script src="{% static 'vendor/bootstrap/js/bootstrap.min.js' %}"></script>
     <link href="{% static 'vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+    <link href="{% static 'css/bootstrap-icons.min.css' %}" rel="stylesheet">
 </head>
 <script src="{% static 'js/main.js' %}"></script>
 <style>
@@ -13,51 +14,46 @@
         height: 100%; /* Устанавливаем высоту для всей страницы */
         margin: 0; /* Убираем стандартные отступы */
     }
-
     .main-container {
         max-height: 100vh;
         height: 100vh;
         {#min-height: 100%; /* Устанавливаем минимальную высоту контейнера равной высоте страницы */#}
         {#max-height: 100%; /* Устанавливаем минимальную высоту контейнера равной высоте страницы */#}
     }
-
     .accordion-body {
         padding: 0;
     }
-
     .table {
         padding: 0;
         margin-bottom: 0;
     }
-
     .accordion-button {
         padding: 8px;
     }
-
     .scrollable {
         height: calc(100vh - 56px);
         overflow-y: auto;
     }
-
     .max-height {
         height: calc(100vh - 56px);
     }
-
     .no-overflow {
         overflow: hidden;
     }
-
     #left-panel {
         padding-left: 0;
         padding-right: 0;
     }
-    
     .accordion-button:not(.collapsed) {
         background-color: #ddd;
+        padding: 4px 8px;
     }
-    
     .accordion-button {
-        background-color: #ddd;
+        background-color: #ffe;
+        padding: 4px 8px;
+    }
+    table.table tr td {
+        padding: 4px 8px;
     }
     
 </style>
@@ -105,24 +101,23 @@
                                     <table class="table table-bordered">
                                         <tbody>
                                         <tr>
-                                            <td style="width: 90%">Building</td>
-                                            <td><button type="button" class="btn btn-info">Edit</button></td>
-                                            <td><button type="button" class="btn btn-danger">Delete</button></td>
+                                            <td style="width: 90%">
+                                                <span class="align-middle">Building</span>
+                                            </td>
+                                            <td>
+                                                <button type="button" class="btn btn-sm btn-outline-info"><i class="bi-pencil-fill"></i></button>
+                                            </td>
+                                            <td>
+                                                <button type="button" class="btn btn-sm btn-outline-danger"><i class="bi-x"></i></button>
+                                            </td>
                                         </tr>
                                         <tr>
                                             <td style="width: 90%">Building</td>
-                                            <td><button type="button" class="btn btn-info">Edit</button></td>
-                                            <td><button type="button" class="btn btn-danger">Delete</button></td>
-                                        </tr>
-                                        <tr>
-                                            <td style="width: 90%">Building</td>
-                                            <td><button type="button" class="btn btn-info">Edit</button></td>
-                                            <td><button type="button" class="btn btn-danger">Delete</button></td>
-                                        </tr>
-                                        <tr>
-                                            <td style="width: 90%">Building</td>
-                                            <td><button type="button" class="btn btn-info">Edit</button></td>
-                                            <td><button type="button" class="btn btn-danger">Delete</button></td>
+                                            <td>
+                                                <button type="button" class="btn btn-sm btn-outline-info"><i class="bi-pencil-fill"></i></button>
+                                            </td><td>
+                                                <button type="button" class="btn btn-sm btn-outline-danger"><i class="bi-x"></i></button>
+                                            </td>
                                         </tr>
                                         </tbody>
                                     </table>
