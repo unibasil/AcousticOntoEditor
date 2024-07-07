@@ -27,7 +27,7 @@ python -m venv venv
 ```
 Установить зависимости из файла `requirements.txt`:
 ```bash
-python install -r requirements.txt
+pip install -r requirements.txt
 ```
 Данные для подключения к MySQL серверу хранятся в файле `AcousticOntoEditor\settings.py`:
 ```python
