@@ -1,3 +1,6 @@
+
+let ontoData = {}
+
 function getData() {
     return Promise.all([
     fetch('/attribute-types/').then((a) => a.json()),
@@ -10,5 +13,16 @@ function getData() {
 }
 
 getData().then((result) => {
-    console.log(result[0]);
+    ontoData = {
+        attributeTypes: result[0],
+        attributes: result[1],
+        entities: result[2],
+        entityFields: result[3],
+        objects: result[4],
+        objectFields: result[5]
+    }
 })
+
+function createDiagramData(data) {
+
+}

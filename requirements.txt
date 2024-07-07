@@ -1,3 +1,4 @@
 Django~=5.0.6
 owlready2~=0.46
 djangorestframework~=3.15.2
+mysqlclient~=2.2.4
