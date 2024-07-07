@@ -15,6 +15,7 @@ TODO: ЗАМЕНИТЬ НА ОКОНЧАТЕЛЬНЫЙ АДРЕС РЕПОЗИТ
 ```bash
 git clone https://github.com/unibasil/AcousticOntoEditor.git AcousticOntoEditor
 cd AcousticOntoEditor
+git checkout develop
 ```
 Настроить venv для проекта:
 ```bash
