@@ -23,7 +23,7 @@ function getData() {
 function createAccordionContent() {
     let body = ''
     for (const [key, value] of Object.entries(accordionItems)) {
-        console.log(`${key}: ${value}`);
+        // console.log(`${key}: ${value}`);
         let itemContent = `
             <div class="accordion-item">
                 <div class="accordion-header" id="heading${value}">
@@ -33,18 +33,21 @@ function createAccordionContent() {
                         ${key}
                     </button>
                 </div>
-                <div id="collapse${value}" class="accordion-collapse collapse show" aria-labelledby="heading${value}">
+                <div id="collapse${value}" class="accordion-collapse" aria-labelledby="heading${value}">
                     <div class="accordion-body ">
         `
-        console.info(ontoData[value]);
         let itemData = ontoData[value]
-        let itemTable = '<table class="table table-bordered"><tbody>'
-        console.info(itemData)
+        let itemTable = '<table class="table table-bordered .accordion-item-body"><tbody>'
         for (const [pk, obj] of Object.entries(itemData)) {
             itemTable += `                                        
                 <tr>
                     <td style="width: 90%">${obj.fields.name}</td>
-                    <td><button type="button" class="btn btn-sm btn-outline-info"><i class="bi-pencil-fill"></i></button></td>
+                    <td>
+                        <button type="button" class="btn btn-sm btn-outline-info edit-button" 
+                        data-bs-toggle="modal" data-bs-target="#edit-item-modal">
+                            <i class="bi-pencil-fill"></i>
+                        </button>
+                    </td>
                     <td><button type="button" class="btn btn-sm btn-outline-danger"><i class="bi-x"></i></button></td>
                 </tr>
             `
@@ -73,6 +76,9 @@ getData().then((result) => {
         if (accordion) {
             accordion.innerHTML = content
         }
+    })
+    .then(() => {
+        // initGoJSDiagram();
     })
 
 function createDiagramData(data) {

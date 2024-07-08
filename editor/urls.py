@@ -6,6 +6,7 @@ from . import views
 app_name = 'editor'
 urlpatterns = [
     path("", views.index, name="index"),
+    path("test", views.test, name="test"),
 
     path("attribute-types/", views.get_attribute_types, name="attribute-types"),
     path("attribute-type/<int:pk>/", views.get_attribute_type, name="attribute-type"),

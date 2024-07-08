@@ -21,18 +21,21 @@ def index(request):
     #     return redirect(f"{settings.LOGIN_URL}?next={request.path}")
     my_range = ["Classes", "Objects", "Attributes", "Attribute Types", "Relationships",]
     context = {
-        "attributes": Attribute.objects.all(),
-        "attributetypes": AttributeType.objects.all(),
-        "entities": Entity.objects.all(),
+        "attributes": Attribute.objects.order_by('name').all(),
+        "attributetypes": AttributeType.objects.order_by('name').all(),
+        "entities": Entity.objects.order_by('name').all(),
         "entityfields": EntityField.objects.all(),
         "relationships": Relationship.objects.all(),
-        "objects": Object.objects.all(),
+        "objects": Object.objects.order_by('name').all(),
         "objectfields": ObjectFieldValue.objects.all(),
         "objectattributetype": ObjectAttributeType.objects.all(),
         "myRange": my_range,
     }
     return render(request, 'editor/index.html', context=context)
 
+
+def test(request):
+    return render(request, 'editor/test.html')
 
 # ---------------
 # Типы атрибутов
@@ -43,7 +46,7 @@ def get_attribute_type(request, pk):
 
 
 def get_attribute_types(request):
-    json = serializers.serialize('json', AttributeType.objects.all())
+    json = serializers.serialize('json', AttributeType.objects.order_by('name').all())
     return HttpResponse(content=json, content_type="application/json")
 
 
@@ -56,7 +59,7 @@ def get_attribute(request, pk):
 
 
 def get_attributes(request):
-    json = serializers.serialize('json', Attribute.objects.all())
+    json = serializers.serialize('json', Attribute.objects.order_by('name').all())
     return HttpResponse(content=json, content_type="application/json")
 
 
@@ -70,7 +73,7 @@ def get_entity(request, pk):
 
 
 def get_entities(request):
-    json = serializers.serialize('json', Entity.objects.all())
+    json = serializers.serialize('json', Entity.objects.order_by('name').all())
     return HttpResponse(content=json, content_type="application/json")
 
 
@@ -98,7 +101,7 @@ def get_object(request, pk):
 
 
 def get_objects(request):
-    json = serializers.serialize('json', Object.objects.all())
+    json = serializers.serialize('json', Object.objects.order_by('name').all())
     return HttpResponse(content=json, content_type="application/json")
 
 
