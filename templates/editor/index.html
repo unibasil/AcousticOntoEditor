@@ -137,24 +137,32 @@
     <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
         <div class="modal-content">
             <div class="modal-header">
-                <h1 class="modal-title fs-5" id="edit-item-modal-label">Edit</h1>
+                <h1 class="modal-title fs-5" id="edit-item-modal-label">Edit entity</h1>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
 
                 <form>
                     <div class="row mb-3">
+                        <label class="form-label col-sm-3" for="entity-id">ID</label>
+                        <div class="col-sm-9">
+                            <input id="entity-id" name="entity-id" type="text"
+                                   class="form-control form-control-sm" value="5" disabled>
+                        </div>
+                    </div>
+
+                    <div class="row mb-3">
                         <label class="form-label col-sm-3" for="entity-name">Name</label>
                         <div class="col-sm-9">
                             <input id="entity-name" name="entity-name" type="text"
-                                   class="form-control .form-control-sm" value="Material">
+                                   class="form-control form-control-sm" value="Material">
                         </div>
                     </div>
                     <div class="row mb-3">
                         <label class="form-label col-sm-3" for="textarea">Description</label>
                         <div class="col-sm-9">
                             <textarea id="textarea" name="textarea" cols="40" rows="5"
-                                      class="form-control .form-control-sm">Материал поверхности</textarea>
+                                      class="form-control form-control-sm">Материал поверхности</textarea>
                         </div>
                     </div>
 
@@ -162,7 +170,7 @@
                         <label class="form-label col-sm-3" for="fields-select">Fields</label>
                         <div class="col-sm-9">
                             <div class="input-group">
-                                <select id="fields-select" name="fields-select" class="form-select"
+                                <select id="fields-select" name="fields-select" class="form-select form-select-sm"
                                         aria-label="Default select example">
                                     <option  value="1">AbsorptionCoefficient</option>
                                     <option value="2">Amplitude</option>
