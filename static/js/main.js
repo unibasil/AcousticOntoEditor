@@ -22,6 +22,7 @@ function getData() {
 
 function createAccordionContent() {
     let body = ''
+    let collapsable = 'show'
     for (const [key, value] of Object.entries(accordionItems)) {
         // console.log(`${key}: ${value}`);
         let itemContent = `
@@ -33,9 +34,10 @@ function createAccordionContent() {
                         ${key}
                     </button>
                 </div>
-                <div id="collapse${value}" class="accordion-collapse" aria-labelledby="heading${value}">
+                <div id="collapse${value}" class="accordion-collapse ${collapsable}" aria-labelledby="heading${value}">
                     <div class="accordion-body ">
         `
+        collapsable = collapsable ==='show' ? 'collapse': collapsable;
         let itemData = ontoData[value]
         let itemTable = '<table class="table table-bordered .accordion-item-body"><tbody>'
         for (const [pk, obj] of Object.entries(itemData)) {
