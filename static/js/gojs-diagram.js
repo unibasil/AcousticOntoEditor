@@ -1,4 +1,4 @@
-    function initGoJSDiagram() {
+    function initGoJSDiagram(nodes, links) {
 
       // Since 2.2 you can also author concise templates with method chaining instead of GraphObject.make
       // For details, see https://gojs.net/latest/intro/buildingObjects.html
@@ -88,6 +88,9 @@
 
       // this simple template does not have any buttons to permit adding or
       // removing properties or methods, but it could!
+
+        console.info(go.Node)
+
       myDiagram.nodeTemplate =
         $(go.Node, "Auto",
           {
@@ -122,20 +125,20 @@
               { row: 1, column: 1, alignment: go.Spot.TopRight, visible: false },
               new go.Binding("visible", "properties", arr => arr.length > 0)),
             // methods
-            $(go.TextBlock, "Methods",
-              { row: 2, font: "italic 10pt sans-serif" },
-              new go.Binding("visible", "visible", v => !v).ofObject("METHODS")),
-            $(go.Panel, "Vertical", { name: "METHODS" },
-              new go.Binding("itemArray", "methods"),
-              {
-                row: 2, margin: 3, stretch: go.Stretch.Fill,
-                defaultAlignment: go.Spot.Left, background: "lightyellow",
-                itemTemplate: methodTemplate
-              }
-            ),
-            $("PanelExpanderButton", "METHODS",
-              { row: 2, column: 1, alignment: go.Spot.TopRight, visible: false },
-              new go.Binding("visible", "methods", arr => arr.length > 0))
+            // $(go.TextBlock, "Methods",
+            //   { row: 2, font: "italic 10pt sans-serif" },
+            //   new go.Binding("visible", "visible", v => !v).ofObject("METHODS")),
+            // $(go.Panel, "Vertical", { name: "METHODS" },
+            //   new go.Binding("itemArray", "methods"),
+            //   {
+            //     row: 2, margin: 3, stretch: go.Stretch.Fill,
+            //     defaultAlignment: go.Spot.Left, background: "lightyellow",
+            //     itemTemplate: methodTemplate
+            //   }
+            // ),
+            // $("PanelExpanderButton", "METHODS",
+            //   { row: 2, column: 1, alignment: go.Spot.TopRight, visible: false },
+            //   new go.Binding("visible", "methods", arr => arr.length > 0))
           )
         );
 
@@ -182,6 +185,7 @@
 
       // setup a few example class nodes and relationships
 
+
       let nodedata = [
         {
           key: 1,
@@ -192,8 +196,11 @@
           ],
           methods: []
         },
-      ]
+      ];
 
+      if (nodes) {
+          nodedata = nodes
+      }
 
       let nodedata1 = [
         {
@@ -254,19 +261,26 @@
           ]
         }
       ];
-      var linkdata = [
+
+      let linkdata = [
         { from: 12, to: 11 },
         { from: 13, to: 11 },
         { from: 14, to: 13, relationship: "Association" }
       ];
-      myDiagram.model = new go.GraphLinksModel(
-        {
+
+      if (links) {
+          linkdata = links
+      } else {
+          linkdata = []
+      }
+
+      myDiagram.model = new go.GraphLinksModel({
           copiesArrays: true,
           copiesArrayObjects: true,
           linkCategoryProperty: "relationship",
           nodeDataArray: nodedata,
           linkDataArray: linkdata
-        });
+      });
     }
 
     // window.addEventListener('DOMContentLoaded', init);

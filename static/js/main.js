@@ -24,6 +24,9 @@ function createAccordionContent() {
     let body = ''
     let collapsable = 'show'
     for (const [key, value] of Object.entries(accordionItems)) {
+        if (key === 'entityFields' || key === 'objectFieldValues') {
+            continue;
+        }
         // console.log(`${key}: ${value}`);
         let itemContent = `
             <div class="accordion-item">
@@ -45,12 +48,13 @@ function createAccordionContent() {
                 <tr>
                     <td style="width: 90%">${obj.fields.name}</td>
                     <td>
-                        <button type="button" class="btn btn-sm btn-outline-info edit-button" 
-                        data-bs-toggle="modal" data-bs-target="#edit-item-modal">
+                        <button type="button" class="btn btn-sm btn-outline-info" 
+                                data-bs-toggle="modal" data-bs-target="#edit-item-modal">
                             <i class="bi-pencil-fill"></i>
                         </button>
                     </td>
-                    <td><button type="button" class="btn btn-sm btn-outline-danger"><i class="bi-x"></i></button></td>
+                    <td><button type="button" class="btn btn-sm btn-outline-danger"
+                                data-bs-toggle="modal" data-bs-target="#delete-item-modal"><i class="bi-x"></i></button></td>
                 </tr>
             `
         }
@@ -69,7 +73,7 @@ getData().then((result) => {
         entities: result[2],
         entityFields: result[3],
         objects: result[4],
-        objectFields: result[5]
+        objectFieldValues: result[5]
     }
 })
     .then(() => createAccordionContent())
@@ -83,6 +87,55 @@ getData().then((result) => {
         // initGoJSDiagram();
     })
 
-function createDiagramData(data) {
+function createDiagram() {
+    let nodes = [];
+    let links = [];
+    for (const [key, item] of Object.entries(ontoData.entities)) {
+        const nodeKey = +item.pk + 1000;
+        const props = [];
+        for(const [k, v] of Object.entries(ontoData.entityFields)) {
+            console.info(item.pk, v.fields.id_entity);
+            if (+item.pk === +v.fields.id_entity) {
+                const id_attr = +v.fields.id_attribute;
+                for (const [k2, v2] of Object.entries(ontoData.attributes)) {
+                    if (+v2.pk === +id_attr) {
+                        props.push({
+                            name: v2.fields.name,
+                            visibility: 'public'
+                        })
+                    }
+                }
+            }
+        }
+        nodes.push({
+            key: nodeKey,
+            name: item.fields.name,
+            properties: props
+        });
+    }
+    for (const [key, item] of Object.entries(ontoData.objects)) {
+        const objectKey = +item.pk + 2000;
+        const classKey = +item.fields.id_entity + 1000;
+        nodes.push({
+            key: objectKey,
+            name: item.fields.name
+        });
+        links.push({
+            from: objectKey,
+            to: classKey,
+            relationship: "Realization"
+        })
+    }
+    // for (const [key, item] of Object.entries(ontoData.attributes)) {
+    //     nodes.push({
+    //         key: +item.pk + 3000,
+    //         name: item.fields.name
+    //     });
+    // }
+    initGoJSDiagram(nodes, links)
+}
 
+
+function makeExport() {
+    
 }
